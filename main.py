@@ -57,5 +57,12 @@ def vigenere(message, password, ciffer):
 # # print("#"*30)
 
 
-print(vigenere(message="hakim", password="abc", ciffer=True))
-print(vigenere(message="rlwsx", password="abc", ciffer=False))
+# print(vigenere(message="hakim", password="abc", ciffer=True))
+# print(vigenere(message="rlwsx", password="abc", ciffer=False))
+
+
+if __name__== "__main__":
+	print("jai envie de manger gratin de pates avec lardons")
+	crypted_message = cesar_ciffer("j'ai envie de manger gratin de pates avec lardons", 3)
+	print(crypted_message)
+	print(cesar_decrypt("m*dlàhqylhàghàpdqjhuàjudwlqàghàsdwhvàdyhfàghvàodugrqv", 3))
